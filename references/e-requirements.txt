@@ -1,0 +1,22 @@
+# Base Streamlit requirements
+streamlit
+
+# Data & Math
+pandas
+numpy
+scipy
+
+# Visualization
+plotly
+matplotlib
+ase
+
+# Excel
+pandas
+openpyxl
+XlsxWriter
+
+# Chemistry specific (Add these when you start coding the logic)
+# stmol        # For 3D molecule rendering in Streamlit
+# py3Dmol     # Required by stmol
+# rdkit       # For chemical informatics

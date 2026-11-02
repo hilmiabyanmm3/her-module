@@ -1,0 +1,47 @@
+&CONTROL
+  calculation = 'relax'
+  restart_mode = 'from_scratch'
+  outdir = './tmp'
+  pseudo_dir = '/home/s2420025/PSEUDO'
+  nstep = 1000
+/
+
+&SYSTEM
+  ibrav = 0
+  nat = 2
+  ntyp = 1
+  ecutwfc = 40
+  ecutrho = 400
+  occupations = 'smearing'
+  smearing = 'mv'
+  degauss = 0.01
+  nspin = 1
+  vdw_corr = 'dft-d3'
+/
+
+&ELECTRONS
+  mixing_mode = 'plain'
+  mixing_beta = 0.5
+  electron_maxstep = 150
+  conv_thr = 1.D-6
+  diagonalization = 'david'
+  scf_must_converge = .FALSE.
+/
+
+&IONS
+  ion_dynamics = 'bfgs'
+/
+
+ATOMIC_SPECIES
+H   1.00794  h_pbe_v1.4.uspp.F.UPF
+
+ATOMIC_POSITIONS (angstrom)
+H   15.0000000000   15.0000000000   14.6270000000
+H   15.0000000000   15.0000000000   15.3730000000
+
+K_POINTS gamma
+
+CELL_PARAMETERS (angstrom)
+  30.00000000000000   0.00000000000000   0.00000000000000
+   0.00000000000000  30.00000000000000   0.00000000000000
+   0.00000000000000   0.00000000000000  30.00000000000000

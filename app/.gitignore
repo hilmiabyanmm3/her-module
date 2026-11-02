@@ -1,0 +1,12 @@
+#Windows System Add
+desktop.ini
+Thubs.db
+
+#Python
+__pycache__/
+*.py[cod]
+dist/
+build/
+*.egg-info
+.venv
+env
